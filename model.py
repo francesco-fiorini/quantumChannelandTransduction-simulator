@@ -5,9 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math  # For math.comb in Kraus operator generation
 
-# Enable LaTeX rendering and set font preferences for better visualization
-plt.rc('text', usetex=True)
-plt.rc('font', family='serif')
 
 # ### Core Functions
 
