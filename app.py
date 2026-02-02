@@ -5,6 +5,14 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 
+import matplotlib as mpl
+
+
+mpl.rcParams.update({
+    "text.usetex": False,   # ← fondamentale
+    "font.family": "serif"
+})
+
 from model import (
     simulate_model1_trajectory,
     simulate_model2_trajectory,
@@ -183,7 +191,7 @@ if run_button:
     scan_type_csv = scan_type_csv_map[scan_type]
 
     data = {
-        "scan_variable": [f"{x:.4f}".replace(".", ",") for x in x_vals],
+        "scan_variable": [f"{x:.4f}" for x in x_vals],
         "scan_type": [scan_type_csv] * len(x_vals),
         "run_mode": [run_mode] * len(x_vals),
         "F_or_P": [F_or_P] * len(x_vals),
