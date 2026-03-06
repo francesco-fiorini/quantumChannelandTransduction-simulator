@@ -1,13 +1,26 @@
 # Quantum Channel and Transduction Fidelity Simulator
 
-Interactive Monte Carlo and analytical simulator for fidelity evaluation, under:
-1) Fiber optic channel attenuation (photon loss)
-2) Electro-optic quantum transduction (additional loss and noise)
+Interactive Monte Carlo and analytical simulator for fidelity evaluation in a quantum link with the following imperfect operations:
 
-Two photonics encoding shcemes are used and compared:
+1) Probabilistic source generation 
 
-- Model 1: Time-bin encoding (Dual-rail)
-- Model 2: Fock States encoding (Single-rail)
+2) Fiber optic channel attenuation
+
+3) Electro-optic quantum transduction
+
+Two photonic encoding schemes are used and compared:
+
+- Model 1: Time-bin encoding (dual-rail)
+
+- Model 2: Fock State encoding (single-rail)
+
+The simulator provides:
+
+- Interactive Monte Carlo fidelity simulation including source and channel imperfections.
+
+- Analytical formulas for comparison and validation.
+
+- CSV export of simulation results for post-processing.
 
 Built with:
 - QuTiP
