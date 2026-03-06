@@ -42,13 +42,13 @@ run_mode = st.sidebar.selectbox(
     "Run mode",
     [
         "Model 1 only (Time Bins)",
-        "Model 2 only (Single Rail)",
+        "Model 2 only (Fock States)",
         "Both models (comparison)"
     ]
 )
 
 F_or_P = st.sidebar.slider(
-    "Source success probability (F or P)",
+    "Source success probability",
     min_value=0.0,
     max_value=1.0,
     value=0.8,
@@ -64,7 +64,7 @@ eta_t = st.sidebar.slider(
 )
 
 eta_c_fixed = st.sidebar.slider(
-    "Fiber transmissivity η𝚌 (fixed)",
+    "Fiber transmissivity η𝚌",
     min_value=0.0,
     max_value=1.0,
     value=0.63,
@@ -80,7 +80,7 @@ n_bar = st.sidebar.slider(
 )
 
 dim_photonic = st.sidebar.selectbox(
-    "Photonic Hilbert dimension",
+    "Photonic Hilbert dimension truncation",
     [2, 3, 4, 5, 6],
     index=2
 )
