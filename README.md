@@ -33,7 +33,7 @@ Built with:
 If you use this simulator, please cite:
 
 F. Fiorini, *Quantum Channel and Transduction Simulator*, 2026.
-Online: [https://quantum-transduction.streamlit.app](https://quantumchannelandtransduction-simulator.streamlit.app/)
+Online: https://quantumchannelandtransduction-simulator.streamlit.app/
 
 ## License
 Please refer to the LICENSE file
