@@ -5,14 +5,6 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 
-import matplotlib as mpl
-
-
-mpl.rcParams.update({
-    "text.usetex": False,   # ← fondamentale
-    "font.family": "serif"
-})
-
 from model import (
     simulate_model1_trajectory,
     simulate_model2_trajectory,
@@ -24,18 +16,23 @@ from model import (
 # Streamlit configuration
 # ----------------------------
 st.set_page_config(
-    page_title="Quantum Transduction Fidelity Simulator",
+    page_title="Quantum Channel and Transduction Fidelity Simulator",
     layout="wide"
 )
 
-st.title("Quantum Transduction Fidelity Simulator")
+st.title("Quantum Channel and Transduction Fidelity Simulator")
 st.markdown(
     """
-    Monte Carlo simulation and analytical comparison  
-    **Model 1 (Time Bins)** vs **Model 2 (Single Rail)**
+    Monte Carlo simulation and analytical comparison with two photonic encoding models 
+    
+    **Model 1 (Time Bins)** vs **Model 2 (Single Rail Fock States)**
     """
 )
-
+# Author info
+st.markdown(
+    "<sub>Author: Francesco Fiorini — francesco.fiorini@phd.unipi.it</sub>",
+    unsafe_allow_html=True
+)
 # ============================
 # Sidebar — Parameters
 # ============================
