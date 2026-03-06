@@ -27,13 +27,13 @@ Built with:
 - Streamlit
 - NumPy / Matplotlib
 
-🔗 Live demo: (link after deployment)
+🔗 Live demo: https://quantumchannelandtransduction-simulator.streamlit.app/
 
 ## Citation
 If you use this simulator, please cite:
 
 F. Fiorini, *Quantum Channel and Transduction Simulator*, 2026.
-Online: https://quantum-transduction.streamlit.app
+Online: [https://quantum-transduction.streamlit.app](https://quantumchannelandtransduction-simulator.streamlit.app/)
 
 ## License
 Please refer to the LICENSE file
